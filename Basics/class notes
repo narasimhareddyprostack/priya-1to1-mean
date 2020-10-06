@@ -24,3 +24,57 @@ Work around
 2.Google
 3.Team member
 4.project Manager
+--------------------------
+Topic 
+Node Js - Http and express Js ie as web framework, 
+
+
+----------------
+
+>npm init -y
+>npm i express  bootstrap monogdb 
+
+---------------------------------------
+Nodejs Software(window/Mac)( nodejs , npm)
+
+> 1) core modules (added in our local foler) list: os, fs, http, event, path
+  2) 3rd Party module/packages- Based on Application Development (npmjs)
+  3) create custom package/module, use it.
+
+  npm - node package Manager
+  it has 3rd party package in npmjs.org
+
+
+  In Npm - 1min, 
+  ------------------------------------
+  express - nodejs Web Application framework
+
+  JSP -     Java web application framework
+
+  Django  - Python web application
+
+  MERN / MEAN - Stack
+  Jam Stack  - Javascript - API, and Markup
+
+  JAMS - Java Angular monogdb Spring Boot
+
+
+  React with Python Django
+  Angula with .Net
+
+---------------------
+Java -   JSP/ Spring Boot
+python - Django / flask
+.net   - ASP.net
+php --   cake php/codeigniter
+
+js- nodejs - express
+
+We are bulding web applications
+
+
+--------------------------
+>> npm i -g express 
+
+
+
