@@ -1,0 +1,26 @@
+echo "# priya-1to1-mean" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/narasimhareddyprostack/priya-1to1-mean.git
+git push -u origin master
+            
+-----------------------------------
+
+How to create base project.
+
+
+2/3 blind
+==========================
+1 hour, 3 practice
+30 days.
+you have your resume, and project 2/3
+------------------------------------
+
+
+Work around
+-----------
+1.you have to apply common sence/ read error
+2.Google
+3.Team member
+4.project Manager
