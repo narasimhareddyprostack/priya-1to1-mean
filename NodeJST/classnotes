@@ -1,0 +1,40 @@
+
+
+Step 1: >npm init -y
+step 2: >Install Required Packages
+step 3: configuration(transpilation)
+        a)Babel Configuration (.babelrc)
+		b)package.json file - start - start.js
+step 4: start.js -- app.js
+
+How to start the project - npm start
+
+
+step 5: bootstrap configuration
+
+=====================================
+
+
+
+Step 1: >npm init -y
+step 2: >Install Required Packages
+
+npm i express @babel/core @babel/register @babel/preset-env babel-polyfill
+step 3: configuration(transpilation)
+        a)Babel Configuration (.babelrc)
+        add properteis(Preset props/  variables)
+		
+        b)package.json file - start - start.js
+step 4: start.js -- app.js
+
+How to start the project - npm start
+
+
+step 5: bootstrap configuration
+''''
+Q)
+Why we require start.js , instead we have app.js
+Why not we can call app.js
+like nodemon app.js
+
+----------------------------
