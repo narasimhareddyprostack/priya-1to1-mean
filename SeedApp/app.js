@@ -9,7 +9,7 @@ app.set("views", "./src/view");
 app.set("view engine", "ejs");
 
 app.get("/", function (req, res) {
-  res.render("index");
+  res.render("index", { message: "Movie Application"} );
 });
 
 app.listen(port, function (err) {
