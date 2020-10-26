@@ -1,0 +1,85 @@
+
+What is what 
+
+--Variable , Array,  Array Object, Object/JSON, String
+  var x = 10
+  var Emp_Name="Priya"
+  var Emp_Loc = []
+  var Emp_FullDetails= [{
+       
+                        }]
+  var Employee = {
+
+                 }
+
+  var is_Avail = true
+
+  What is undefined?
+
+  Property 
+--Function, Function Call
+  method
+
+--class,(propeties + Methods)
+--Object
+
+C R U D 
+
+-- Difference Betten functin and functin call
+-- Difference Between Array Object and Object
+                      []               { }    
+
+JavaScript - ES6 Featues
+-- Array, Array Object
+   Array supporting New Featues
+   
+   array1.forEach()
+   array1.map()
+   array1.reduce()
+
+-- Destructuring Object
+
+-- Arrow Function/Fat Arrow
+
+-- Class, Import and Export
+
+-- let, const
+
+-- spread Operator ...
+--   - String Literal/Object Literal  - ` ${value} `
+
+let Emp_Name = "Priya"
+console.log('Hi', Emp_Name)
+consice.log(` Hi.. ${Emp_Name}`)
+
+
+Add.js
+Class Add(){
+
+}
+Export default Add
+
+
+File2.js
+Import Add from './Add.js'
+
+
+
+
+File.js
+-------------------
+functin Add(){
+
+}
+
+Add()  - Function All
+
+----------------------
+
+() => {
+    return x
+}
+-------
+()=>x
+
+We will consice code and readability.
