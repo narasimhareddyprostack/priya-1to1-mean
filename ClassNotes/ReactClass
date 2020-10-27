@@ -1,0 +1,22 @@
+npm i create-react-app
+create-react-app rb
+cd rb
+npm start
+-----------------------
+npx create-react-app rb
+cd rb
+npm start
+-----------------------
+CDN - Content Delivery Network
+
+
+React Flow
+---------
+Index.js is main file of React Application, its render App component.
+App component is function.
+App component is Functional component, it return one JSX element.
+What is JSX - HTML Element with React Syntax
+
+or 
+Index.js - render()
+           render(<App/>, 'root')
