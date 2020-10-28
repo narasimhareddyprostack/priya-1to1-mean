@@ -20,3 +20,37 @@ What is JSX - HTML Element with React Syntax
 or 
 Index.js - render()
            render(<App/>, 'root')
+==========================================
+
+index.js  - main file of react Application
+
+app.js  - main component/root component of React Application
+index.html - servering main template
+
+Angular/React - component driven Application
+component?    - piece of code/ collection element/describing the UI.
+              Decomposing UI into components, make them as UI.
+
+ReactDOM.render(<App />, document.getElementById("priya"));
+render(arg1, arg2)
+render()  - two arguments
+First argument - what you want to render,
+Second argument -where you want to render
+
+
+nodemon -Hot Reloading/Refreshing/stop or start the server/ changes done automatically - nodemon
+babel -  traspiler
+
+webpack - injecting the code
+
+
+----------
+index.js  - main file of applicaiton
+ReactDOM.render(arg1,agr2)
+app.js
+- Main component File
+
+index.html  - serving as main template.
+
+
+-------------------------------------------
