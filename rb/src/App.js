@@ -1,17 +1,18 @@
-import logo from "./logo.svg";
-import "./App.css";
+// function App() {
+//   return <h2> Welcome to PSA</h2>;
+// }
+// export default App;
+import React, { Component } from "react";
+import Products from "./component/Products";
 
-function App() {
-  return <h2>Hello .. Good Morning</h2>;
+class App extends Component {
+  render() {
+    return (
+      <>
+        <h2> Welcome to PSA - Class Component</h2>
+        <Products productName="iphone" />
+      </>
+    );
+  }
 }
-
 export default App;
-//JSX  - HTML + XML(JS)
-//npx
-
-// {{angular}}
-
-// { React}
-
-// <%= EJS %>
-// <%php %>

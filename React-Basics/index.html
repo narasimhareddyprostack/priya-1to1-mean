@@ -1,31 +1,38 @@
 <html>
   <head>
     <title>Bootstrap template</title>
-	<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
   <body>
-    <div id="priya">
-
-    </div>
+    <div id="priya"></div>
   </body>
   <script type="text/babel">
-  function Welcome(){
-      return( <> <Order orderid="101"/> <h5> Good Morning</h5></>);
-  }
-  
-  function Order(props){
-	return <h2> Order Id: {props.orderid }  Delivered Successfullly</h2>
-  }
-  
-  ReactDOM.render(<Welcome/>, document.getElementById('priya'));
-  
-  
+    function Welcome() {
+      return (
+        <>
+          {" "}
+          <Order orderid="102" /> <h5> Good Morning</h5>
+        </>
+      );
+    }
+    class Order extends React.Component {
+      render() {
+        return <h2> Order Id: {this.props.orderid} Delivered Successfullly</h2>;
+      }
+    }
+
+    // function Order(props) {
+    //   return <h2> Order Id: {props.orderid} Delivered Successfullly</h2>;
+    // }
+
+    ReactDOM.render(<Welcome />, document.getElementById("priya"));
   </script>
 </html>
-
-//  { Object }
-// {{  }}
-// <%=  %>
-// <%php  %>
