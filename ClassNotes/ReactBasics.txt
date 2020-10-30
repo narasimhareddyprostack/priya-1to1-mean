@@ -1,0 +1,42 @@
+React Js
+  - Functional Componet
+  - Class
+
+React Js - Props and States
+
+
+React - Styling
+
+Adv : To communicate between the components
+
+How to send data/properties from parent to child?
+Props?
+
+variable/properties  
+array   - []
+Object  - { }
+
+State - Object {}
+method- as propes
+
+Step 1: We need to pass
+step 2: Access ( function/class)
+
+Functional Componet - props.propertyName
+class Componet - this.props.propertyName
+
+ES6 - Destructing Object
+    - Unpacking/extracting object values.
+Props
+-----
+
+function Componet to class Componet
+
+functional Componet to Functional component
+
+class to Class
+clas to function
+
+Props - read only data/ immutable
+
+
