@@ -31,7 +31,7 @@ Props
 -----
 
 function Componet to class Componet
-
+<Order one={} two={}
 functional Componet to Functional component
 
 class to Class
