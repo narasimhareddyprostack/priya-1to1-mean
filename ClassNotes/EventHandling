@@ -1,0 +1,24 @@
+Why EventHandling and Binding Requierd?
+Class Comp and event clicking - this keywords return undefined.
+
+avoid this keyword - issue: we have to use EventHandling and EventHandling Mechanism.
+
+1) event hanlder as arrow function - in render() method
+     <button type="submit" onClick={() => this.noProductsHandler()}>
+2) bind(this) - render() method
+    <button type="submit" onClick={this.noProductsHandler.bind(this)}>
+
+3)Binding in Class Constructor
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      noProducts: 1,
+    };
+    this.noProductsHandler = this.noProductsHandler.bind(this);
+  }
+
+4) Impplement Class method  as Arrow Function
+
+
