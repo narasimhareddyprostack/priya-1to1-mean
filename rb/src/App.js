@@ -1,14 +1,12 @@
 import React, { Component } from "react";
 //import Product from "./Ecom/Product";
-import RegClass from "./Events/RegClass";
+import Contact from "./Forms/Contact";
 
 class App extends Component {
   render() {
     return (
       <>
-        <h2> Welcome to PSA - State Example</h2> <hr />
-        <RegClass />
-      
+        <Contact />
       </>
     );
   }

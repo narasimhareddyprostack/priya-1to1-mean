@@ -1,0 +1,15 @@
+npm i --save bootstrap
+
+How to use bootsrap in React Application?
+
+Step1 : Add HTML Element to Form  <input type="text" />
+Step2:  Add new state property and assign the component state to element value
+    this.state = {
+        userName:''   
+    }
+    and assign state to element value 
+    <input type="text"  value={this.state.userName} />
+   Narasim
+
+step3: assign the event handler, for to update state. 
+<input type="text"  value={this.state.userName} onChange={this.changeUserName}/>
