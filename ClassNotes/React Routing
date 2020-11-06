@@ -1,0 +1,29 @@
+In HTML:
+<a href="#">Home</a>
+<a href="#">Discover</a>
+<a href="#">Contact Form</a>
+
+<a href="#">Services</a>
+
+-----------------------------------
+How to avoid page refreshers' in React?
+React - Bilding Single Page Application with help of comp 
+
+Navigation/Routing
+3rd party packages ie react-router-dom 
+
+>npm i --save react-router-dom
+
+<li> <a href="/Home" >  Home</a>  </li>  
+<li> <Link to="/Home">Home</Link> </li> 
+
+-------------------------------------
+<BrowserRouter>
+<Link to="/">Home</Link>
+<Link to="/discover">Discover</Link>
+<Link to="/services">Services</Link>
+<Link to="/contact">Contact Form</Link>
+
+</BrowserRouter>
+
+BrowserRouter, 
