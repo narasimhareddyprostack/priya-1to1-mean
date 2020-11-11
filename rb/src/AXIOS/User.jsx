@@ -5,7 +5,10 @@ class User extends Component {
   state = {
     users: [],
   };
+ 
 
+ 
+ 
   componentDidMount() {
     axios.get(`http://localhost:7000/users`).then((res) => {
       console.log(res.data);
@@ -19,9 +22,13 @@ class User extends Component {
       <div>
         <h1>Users</h1>
         <ul>
-          {this.state.users.map((user) => {
-            <li>{user.name}</li>;
-          })}
+          {this.state.users.map((user) => (
+            <li>
+              User Name:{user.name}
+              <br />
+              Email -ID: {user.email}
+            </li>
+          ))}
         </ul>
       </div>
     );

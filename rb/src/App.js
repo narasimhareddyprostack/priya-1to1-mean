@@ -3,12 +3,13 @@ import React, { Component } from "react";
 import Contact from "./Forms/Contact";
 import Index from "./Router/Index";
 import User from "./AXIOS/User";
+import UserForm from "./AXIOS/UserForm";
 
 class App extends Component {
   render() {
     return (
       <>
-        <User />
+        <UserForm />
       </>
     );
   }
