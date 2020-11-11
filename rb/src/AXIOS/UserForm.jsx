@@ -17,15 +17,18 @@ class UserForm extends Component {
     this.setState({ email: e.target.value });
   };
   formHandler = (e) => {
-    e.preventDefault();
-    const user = this.state.user;
-    Axios.post("http://localhost:7000/addUser", user)
+    const user = {
+      name: this.state.name,
+      email: this.state.email,
+    };
+    Axios.post("http://localhost:9000/addUser", user)
       .then((res) => {
         console.log(res);
       })
       .catch((err) => {
         console.log(err);
       });
+    e.preventDefault();
   };
   render() {
     return (

@@ -1,49 +1,54 @@
 const express = require("express");
 const app = express();
-
-const port = process.env.PORT || 7000;
-
 const bodyParser = require("body-parser");
+
+const cors = require("cors");
+
+const port = process.env.PORT | 9000;
 
 const mongo = require("mongodb");
 const MongoClient = mongo.MongoClient;
-const cors = require("cors");
 
-const mongoURL = `mongodb://127.0.0.1:27017/`;
-const mongoURL1 = "http://localhost:27017";
+const monogURL = "mongodb://127.0.0.1:27017/";
 let db;
 let col_name = "pdatabase";
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
-//http://localhost:7000/users
 app.use(cors());
+//app.options("*", cors()); //
 
-app.get("/users", (req, res) => {
+app.get("/", (req, res) => {
+  console.log("inside root requrest");
   db.collection(col_name)
     .find({})
     .toArray((err, result) => {
+      if (err) throw err;
+      //res.render('index', {})
       res.send(result);
     });
 });
-//http://localhost:7000/addUser
+//localhost:9000/addUser
 app.post("/addUser", (req, res) => {
-  console.log("inside.. post" + req.body);
-  const data = {
+  console.log("inside AddUser");
+  console.log(req.body);
+  const data1 = {
     name: req.body.name,
     email: req.body.email,
+    phone: req.body.phone,
   };
-  db.collection(col_name).insertOne(data, (err, result) => {
+  db.collection(col_name).insertOne(data1, (err, result) => {
     if (err) throw err;
-    else res.send(result);
+    else {
+      res.send(result);
+    }
   });
 });
-
-MongoClient.connect(mongoURL, (err, client) => {
+// localhost:9000/addUser
+MongoClient.connect(monogURL, (err, client) => {
   if (err) console.log(err);
   db = client.db("pdatabase");
   app.listen(port, (err) => {
-    console.log(`Server Running on Port: ... ${port}`);
+    console.log(`Server is running on port.. ${port}`);
   });
 });
