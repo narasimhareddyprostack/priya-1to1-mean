@@ -33,23 +33,29 @@ class UserForm extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.formHandler}>
-          <label>User Name</label>
-          <input
-            type="text"
-            value={this.state.name}
-            onChange={this.nameHandler}
-          />{" "}
-          <br />
-          <label>Email</label>
-          <input
-            type="text"
-            value={this.state.email}
-            onChange={this.emailHandler}
-          />{" "}
-          <br />
-          <button type="submit"> submit</button>
-        </form>
+        <div class="container col-md-6">
+          <form onSubmit={this.formHandler}>
+            <div class="form-group">
+              <label>User Name</label>
+              <input
+                type="text"
+                value={this.state.name}
+                onChange={this.nameHandler}
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input
+                type="text"
+                value={this.state.email}
+                onChange={this.emailHandler}
+                class="form-control"
+              />
+            </div>
+            <button type="submit">submit</button>
+          </form>
+        </div>
       </div>
     );
   }
