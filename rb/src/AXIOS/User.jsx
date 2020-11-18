@@ -5,12 +5,9 @@ class User extends Component {
   state = {
     users: [],
   };
- 
 
- 
- 
   componentDidMount() {
-    axios.get(`http://localhost:7000/users`).then((res) => {
+    axios.get(`http://localhost:9000/`).then((res) => {
       console.log(res.data);
       const users = res.data;
       console.log(users);

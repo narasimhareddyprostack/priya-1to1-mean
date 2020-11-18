@@ -3,12 +3,10 @@ const app = express();
 const bodyParser = require("body-parser");
 
 const cors = require("cors");
-
 const port = process.env.PORT | 9000;
 
 const mongo = require("mongodb");
 const MongoClient = mongo.MongoClient;
-
 const monogURL = "mongodb://127.0.0.1:27017/";
 let db;
 let col_name = "pdatabase";
@@ -28,6 +26,7 @@ app.get("/", (req, res) => {
       res.send(result);
     });
 });
+//localhost:9000/
 //localhost:9000/addUser
 app.post("/addUser", (req, res) => {
   console.log("inside AddUser");
@@ -48,7 +47,13 @@ app.post("/addUser", (req, res) => {
 MongoClient.connect(monogURL, (err, client) => {
   if (err) console.log(err);
   db = client.db("pdatabase");
+
   app.listen(port, (err) => {
     console.log(`Server is running on port.. ${port}`);
   });
 });
+
+/*  .connect(url, (err, client)=>{
+  client.db('pdatabase');
+})
+*/
