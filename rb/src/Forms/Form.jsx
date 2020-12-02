@@ -11,7 +11,8 @@ class Form extends Component {
     };
   }
   userNameHandler = (event) => {
-    //console.log(e.target.value);
+    console.log(event.target.value);
+
     this.setState({ userName: event.target.value });
   };
   emailHandler = (event) => {
