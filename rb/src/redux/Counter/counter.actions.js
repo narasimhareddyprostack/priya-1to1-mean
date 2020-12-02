@@ -1,6 +1,6 @@
 //action types
-export const INCR = "INCR";
-export const DECR = "DECR";
+const INCR = "INCR";
+const DECR = "DECR";
 
 let incrCounter = () => {
   return {
@@ -15,4 +15,4 @@ let decrCounter = () => {
   };
 };
 
-export { incrCounter, decrCounter };
+export { incrCounter, decrCounter, INCR, DECR };
