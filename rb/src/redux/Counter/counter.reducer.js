@@ -1,10 +1,9 @@
 import { INCR, DECR } from "./counter.actions";
-let initialState = {
-  counter: 0,
+export const counterKey = "priya";
+let defaultState = {
+  counter: 5,
 };
-//let counterkey = 10;
-export const counterKey = "PriyaCard";
-let counterReducer = (state = initialState, action) => {
+let counterReducer = (state = defaultState, action) => {
   switch (action.type) {
     case INCR:
       return {
@@ -18,4 +17,4 @@ let counterReducer = (state = initialState, action) => {
       return state;
   }
 };
-export { counterReducer };
+export default counterReducer;

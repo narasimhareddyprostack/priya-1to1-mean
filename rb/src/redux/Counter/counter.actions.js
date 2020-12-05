@@ -1,18 +1,13 @@
-//action types
 const INCR = "INCR";
 const DECR = "DECR";
-
-let incrCounter = () => {
+let incrAction = () => {
   return {
-    type: "INCR",
-    payload: "Dummy",
+    type: INCR,
   };
 };
-let decrCounter = () => {
+function decrAction() {
   return {
-    type: "DECR",
-    payload: "Dummy",
+    type: DECR,
   };
-};
-
-export { incrCounter, decrCounter, INCR, DECR };
+}
+export { INCR, DECR, decrAction, incrAction };
