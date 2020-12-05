@@ -5,7 +5,7 @@ import { incrAction, decrAction } from "./../../redux/counter/counter.actions";
 
 let Counter = () => {
   let x = useSelector((state) => {
-    return state.priya;
+    return state.counterCard;
   });
   let dispatch = useDispatch();
 

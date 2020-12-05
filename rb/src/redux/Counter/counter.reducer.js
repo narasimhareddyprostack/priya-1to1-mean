@@ -1,5 +1,5 @@
 import { INCR, DECR } from "./counter.actions";
-export const counterKey = "priya";
+export const counterKey = "counterCard";
 let defaultState = {
   counter: 5,
 };
